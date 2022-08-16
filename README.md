@@ -1,5 +1,5 @@
 # PASTEL
-Code for "Position-aware Structure Learning for Graph Topology-imbalance by Relieving Under-reaching and Over-squashing" (submitted to CIKM 2022).
+Code for "Position-aware Structure Learning for Graph Topology-imbalance by Relieving Under-reaching and Over-squashing" (accepted by CIKM 2022).
 
 ## Overview
 - main.py: getting started.
