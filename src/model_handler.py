@@ -88,7 +88,7 @@ class ModelHandler(object):
 
         # Calculate the shortest path dists
         self.shortest_path_dists = np.zeros((self.num_nodes, self.num_nodes))
-        self.shortest_path_dists = self.cal_shortest_path_distance(self.cur_adj)
+        self.shortest_path_dists = self.cal_shortest_path_distance(self.cur_adj, 5)
 
         self.shortest_path_dists_anchor = np.zeros((self.num_nodes, self.num_nodes))
         self.shortest_path_dists_anchor = torch.from_numpy(self.cal_spd(self.cur_adj, 0)).to(self.device).to(torch.float32)
