@@ -124,7 +124,7 @@ class ModelHandler(object):
             # Calculate the shortest path dists every n epochs
             if self._epoch % self.config['pe_every_epochs'] == 0:
                 self.position_flag = 1
-                self.shortest_path_dists = self.cal_shortest_path_distance(self.cur_adj)
+                self.shortest_path_dists = self.cal_shortest_path_distance(self.cur_adj, 5)
                 self.shortest_path_dists_anchor = torch.from_numpy(self.cal_spd(self.cur_adj, 0)).to(self.device).to(torch.float32)
             else:
                 self.position_flag = 0
